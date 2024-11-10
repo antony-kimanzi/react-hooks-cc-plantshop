@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 export default function DeleteButton({ id, handleDelete }) {
   const deletePlant = () => {
-    fetch(`http://localhost:6001/plants/${id}`, {
+    fetch(`https://react-hooks-cc-plantshop-iyxf.onrender.com/plants/${id}`, {
       method: 'DELETE',
     })
     .then(res => res.json())

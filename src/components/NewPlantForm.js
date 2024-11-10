@@ -14,7 +14,7 @@ function NewPlantForm({addPlant}) {
 
     const parsedPrice = parseFloat(price);
 
-    fetch("http://localhost:6001/plants", {
+    fetch("https://react-hooks-cc-plantshop-iyxf.onrender.com/plants", {
       method: 'POST',
       body: JSON.stringify({
         name: name,
