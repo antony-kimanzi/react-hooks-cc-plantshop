@@ -16,9 +16,14 @@ Description: A web application designed that allows users to buy plants.
 * Go live or open the index.html file with chrome
 * And you are all done
 
-## Live server
+## Live web link
 
-* You can view the web live on [fitness-tracker-app](https://antony-kimanzi.github.io/fitness-progress-app/)
+* You can view the web live on [[plantsy-plantshop-app]](https://plantsy-plantshop.netlify.app/)
+
+## Live server deployment
+
+* You can view the deployed server on [rendered server link](https://react-hooks-cc-plantshop-iyxf.onrender.com)
+
 
 ## Known Bugs
 
@@ -34,6 +39,6 @@ email :: antony.wambugu@student.moringaschool.com
 
 ### License
 
-*LIcenced under the [MT-licence](https://github.com/antony-kimanzi/fitness-progress-app/blob/main/LICENSE.md)*
+*LIcenced under the [MT-licence](https://github.com/antony-kimanzi/react-hooks-cc-plantshop/blob/master/LICENSE.md)*
 
 Copyright (c) 2024 **Antony Wambugu**
