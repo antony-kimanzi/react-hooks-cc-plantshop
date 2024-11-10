@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import DeleteButton from "./DeleteButton";
+import UpdateButton from "./UpdateButton";
+import Button from 'react-bootstrap/Button';
 
-function PlantCard() {
+function PlantCard({ plant, handleDelete, handleUpdate }) {
+  const [outOfStock, setOutOfStock] = useState(false);
+
+  const stockButton = () => {
+    setOutOfStock(true);
+  };
+
   return (
     <li className="card" data-testid="plant-item">
-      <img src={"https://via.placeholder.com/400"} alt={"plant name"} />
-      <h4>{"plant name"}</h4>
-      <p>Price: {"plant price"}</p>
-      {true ? (
-        <button className="primary">In Stock</button>
+      <img src={plant.image} alt={plant.name} />
+      <h4>{plant.name}</h4>
+      <p>Price: {plant.price}</p>
+      {!outOfStock ? (
+        <Button className="stock-button" variant="success" onClick={stockButton}>In Stock</Button>
       ) : (
-        <button>Out of Stock</button>
+        <Button className="stock-button" variant="secondary">Out Of Stock</Button>
       )}
+      <UpdateButton plant={plant} onUpdate={handleUpdate} />
+      <DeleteButton id={plant.id} handleDelete={handleDelete} />
     </li>
   );
 }
